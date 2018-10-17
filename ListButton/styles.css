@@ -1,0 +1,11 @@
+button {
+    background-color: hsl(180, 100%, 50%);
+    border: 2px black thick;
+    color: blue;
+    text-align: center;    
+    font-size: 16px;
+}
+
+h1.foo {
+    text-align: center;
+}
