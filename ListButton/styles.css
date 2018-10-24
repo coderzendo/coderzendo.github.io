@@ -1,14 +1,30 @@
-button {
-    background-color: hsl(180, 100%, 50%);
-    border: 4px green ridge;     
-    color: blue;
-    text-align: left;    
-    font-size: 16px;
+body {
+    font-size: 125%;
+    margin: auto;    
+    max-width: 750px;
+}
+
+aside {        
+    background-color: bisque;
+    border: black 1px solid;
+    border-radius: 8px;
+    float: right;
+    font-style: italic;
+    margin-right: 5px;
+    padding: 8px;
+    width: 33%;        
 }
 
 footer {
     background-color: cadetblue;
     text-align: center;
+}
+
+input#list-data {
+    border: 10px yellowgreen solid;
+    border-radius: 15px;
+    font-size: 100%;
+    padding: 5px;
 }
 
 header {
@@ -29,13 +45,17 @@ h1#new-point {
     text-align: center;
 }
 
-img#list-button-utah {
-    width: 100px;
+img#list-button-utah {    
     height: 100px;
     float: right;
+    margin-left: 8px;
+    width: 100px;
 }
+
 main {
     background-color: green;
+    margin: auto;
+    padding-left: 8px;
 }
 
 nav {        
@@ -54,6 +74,14 @@ nav ul {
 nav li {
     display: inline;
     padding: 8px;    
+}
+
+ul#my-list {    
+    background-color: aquamarine;
+    border: 10px yellowgreen solid;
+    border-radius: 12px;
+    display: inline-block;
+    padding-right: 8px;
 }
 
 .byline {

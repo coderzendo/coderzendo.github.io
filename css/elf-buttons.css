@@ -1,0 +1,52 @@
+button {
+    background-color: lightgreen;
+    border: 4px green ridge;     
+    color: blue;
+    text-align: left;    
+    font-size: 16px;
+}
+
+.elf-border {
+    display: inline-block;
+    border: 1px black solid;
+}
+
+.btn-padding {
+    padding: 8px;
+    border: 10px greenyellow solid;    
+    border-radius: 12px;
+}
+
+.btn-padding:hover {
+    background-color: goldenrod;
+    border-color: white;
+}
+
+.btn-margin {
+    margin: 25px;
+    border: 10px green groove;    
+}
+
+.btn-margin:hover {
+    background-color: aqua;
+    border-color: white;
+}
+
+.btn-margin-padding {
+    border: 10px yellowgreen solid;
+    border-radius: 15px;
+    display: block;
+    font-size: large;
+    font-weight: bold;    
+    margin: 25px;
+    padding: 25px;
+}
+
+.btn-margin-padding:hover {
+    background-color: goldenrod;
+    border-color: white;
+}
+
+.btn-margin-padding:active {
+    color: red;
+}
