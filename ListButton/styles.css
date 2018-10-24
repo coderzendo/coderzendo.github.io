@@ -4,15 +4,37 @@ body {
     max-width: 750px;
 }
 
-aside {        
-    background-color: bisque;
-    border: black 1px solid;
+aside {
+    border: 1px black solid;
     border-radius: 8px;
-    float: right;
+    font-size: 120%;
     font-style: italic;
-    margin-right: 5px;
-    padding: 8px;
-    width: 33%;        
+    float: right;
+    background-color: blanchedalmond;
+    width: 33%;
+    padding: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+button.test-button {
+    padding: 25px;
+    border: 15px yellowgreen solid;
+    border-radius: 35px;
+}
+
+button.test-button:hover {
+    background-color: bisque;
+    border-color: white;
+}
+
+button.margin-button {
+    margin: 25px;
+}
+
+div#margin-div {
+    border: 1px black solid;
+    display: inline-block;
 }
 
 footer {
