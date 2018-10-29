@@ -15,10 +15,11 @@ y < x;
 // Notice the space between the operands and the modulus operator:
 212 % 9;
 
-/* Example of Logical Operator: */
+// Assignments for use in the code found below here.
 y = 5;
 x = 2;
 
+/* Example of Logical Operator: */
 // Notice the spaces between the operators and the operands. This is important.
 if (( x < 1 ) && ( 5 === y )) {
     console.log("PASSED: x is smaller than one pr 5 does not equal y")
