@@ -37,6 +37,14 @@ div#margin-div {
     display: inline-block;
 }
 
+figure.right {
+    float: right;
+}
+
+figure.right figcaption {
+    margin-left: 8px;
+}
+
 footer {
     background-color: cadetblue;
     text-align: center;
@@ -69,9 +77,13 @@ h1#new-point {
 
 img#list-button-utah {    
     height: 100px;
-    float: right;
+    
     margin-left: 8px;
     width: 100px;
+}
+
+img {
+    width: 95%;
 }
 
 main {

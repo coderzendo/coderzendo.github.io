@@ -7,14 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>List Button</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="../css/elf-buttons.css">    
+    <link rel="stylesheet" href="../css/elf-buttons.css">
     <script src="../lib/elf-code.js"></script>
-    <script src="index.js"></script>    
+    <script src="index.js"></script>
 </head>
 
 <body>
 
-    
+
     <header>
         <h1>Button List</h1>
         <p>Show how to Style Buttons and Respond to Button Clicks</p>
@@ -42,15 +42,18 @@
 
             <h1 id="click-buttons">Clicking Buttons</h1>
             <input id="list-data" type="text" name="list-data">
-            <button id="set-text" class="btn-padding" type="button">Set Text</button>            
+            <button id="set-text" class="btn-padding" type="button">Set Text</button>
             <button id="add-to-list" class="btn-margin-padding" type="button">Add to list</button>
             <ul id="my-list"></ul>
 
             <h1 id="new-point">New Point I</h1>
 
-            <figure>
-                <img id="list-button-utah" src="../images/utah-440520_640.jpg" alt="Picture of Utah">
-            </figure>
+            <div class="figure"></div>
+                <figure class="right">
+                    <img id="list-button-utah" src="../images/utah-440520_640.jpg" alt="Picture of Utah">
+                    <figcaption>Foo</figcaption>
+                </figure>
+            
 
             <p>Some text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egestas tincidunt ornare.
                 Nullam accumsan est ut tortor congue, in rutrum mauris porttitor. In sed nibh felis. Sed laoreet sit
@@ -63,7 +66,8 @@
         <section>
             <h2 id="more-information">More Information</h2>
 
-            <aside>This is my aside. It uses the HTML5 semantic element <b>aside</b>. It's appearance was changed with CSS.</aside>
+            <aside>This is my aside. It uses the HTML5 semantic element <b>aside</b>. It's appearance was changed with
+                CSS.</aside>
 
             <p>Quisque porta sem quis dictum varius. Vivamus tincidunt aliquam elit vitae dapibus. Donec maximus eros
                 ut risus laoreet eleifend. Nam scelerisque mauris non felis faucibus ullamcorper. Morbi id dolor risus.
@@ -71,6 +75,8 @@
                 netus et malesuada fames ac turpis egestas. Integer venenatis hendrerit nunc a placerat. Vivamus
                 sodales neque et ligula egestas, ut lacinia mi ornare. Sed eu urna mi. Nunc vel mollis tellus. Nam
                 aliquet tempor mauris, ac varius tortor hendrerit vel. Duis molestie eros ut enim rhoncus imperdiet</p>
+
+            <img src="../images/utah-440520_640.jpg" alt="">    
         </section>
 
         <section>
@@ -86,7 +92,7 @@
         <section>
             <h2>Another Set of Information</h2>
 
-            
+
             <p>Curabitur molestie, est a volutpat feugiat, elit massa interdum quam, sit amet tempus lectus dui
                 facilisis turpis. Mauris ac urna quis velit viverra bibendum nec quis metus. Nullam suscipit ante sed
                 ipsum consectetur, at porta nunc semper. Phasellus non arcu ante. Maecenas eu consectetur felis. Ut et
@@ -107,7 +113,8 @@
             &copy; Charlie Calvert
         </p>
         <ul>
-            <li><a href="./about.html">About</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>            
         </ul>
     </footer>
 </body>
