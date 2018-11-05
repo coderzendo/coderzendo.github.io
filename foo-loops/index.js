@@ -1,13 +1,16 @@
-
+// const addToList = 
 window.onload = () => {
+    /*
+     * listButton: variable
+     * 
+     */
     const listButton = document.getElementById('run-for-loop');
 
-    listButton.onclick = () => {
+    listButton.onclick = function () {
         const myList = document.getElementById('my-list');
         
         for (let i = 0; i < 5; i++) {
            elfCode.appendToList(myList, i);
-        }
-        
-    }
+        }        
+    };
 }
