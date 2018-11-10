@@ -16,6 +16,7 @@ window.onload = () => {
         const userInput = document.getElementById('user-input');
         userInputParagraph.textContent = userInput.value;
     }
+      
 }
 
 function simpleFunction() {
