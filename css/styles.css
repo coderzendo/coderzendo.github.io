@@ -58,7 +58,8 @@ input#list-data {
 }
 
 header {
-    background-color: violet;
+    border: black thin solid;
+    background-color: lightblue;
     text-align: center;
 }
 
@@ -87,7 +88,8 @@ img {
 }
 
 main {
-    background-color: green;
+    border: black thin solid;
+    background-color: lightskyblue;
     margin: auto;
     padding-left: 8px;
 }
