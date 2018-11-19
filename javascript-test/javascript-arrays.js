@@ -2,7 +2,7 @@ window.onload = () => {
 
     const arrays = {
         numbers: [15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
-        languageNames: [],
+        languageNames: ['JavaScript', 'HTML', 'CSS', 'Java', 'C#', 'Python', 'C/C+'],
         languagePopularity: []
     };
 
@@ -18,6 +18,15 @@ window.onload = () => {
             numbersDisplay.appendChild(li);
         }
     };
-    languageNamesAction.onclick = () => {};
+    languageNamesAction.onclick = () => {
+        const languageNamesDisplay = document.getElementById('tech-language-names-display');
+
+        for (let language of arrays.languageNames.sort()) {
+            const li = document.createElement("li");
+            li.appendChild(document.createTextNode(language));
+            languageNamesDisplay.appendChild(li);
+        }
+
+    };
     techLanguagePopularityAction.onclick = () => {};
 };

@@ -46,6 +46,7 @@ figure.right figcaption {
 }
 
 footer {
+    border: black thin solid;
     background-color: cadetblue;
     text-align: center;
 }
