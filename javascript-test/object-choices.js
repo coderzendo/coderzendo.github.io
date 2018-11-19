@@ -1,79 +1,45 @@
 function loader() {
-    const getNamesButton = document.getElementById('getNames');
-    const functionButton = document.getElementById('getFunctionObject');
+    const objectLiteralButton = document.getElementById('objectLiteralAction');
+    const functionButton = document.getElementById('functionObjectAction');
+    const customClassButton = document.getElementById('customClassAction')
 
-    getNamesButton.onclick = function() {
+    objectLiteralButton.onclick = function() {
         const name = myObject.getName();
-        const getNameDisplay = document.getElementById('getNameDisplay');
+        const getNameDisplay = document.getElementById('olNameDisplay');
         getNameDisplay.textContent = name;
 
         const fullName = myObject.getFullName();
-        const getFullNameDisplay = document.getElementById('getFullNameDisplay');
+        const getFullNameDisplay = document.getElementById('olFullNameDisplay');
         getFullNameDisplay.textContent = fullName;
     }
 
-    const functionObject = new FunctionObject();
-    console.log(functionObject.getFullName());
-    //console.log(functionObject.getName());
-    functionButton.onclick = functionObject.showFullName;
+    functionButton.onclick = function() {
+        const constructorFunctionDisplay = document.getElementById('functionObjectNameDisplay')
+        const functionObject = new FunctionObject();
+        constructorFunctionDisplay.textContent = functionObject.getFullName();    
+    }
+
+    customClassButton.onclick = function() {
+        const customClassDisplay = document.getElementById('customClassNameDisplay');
+        const customClass = new CustomClass();
+        const name = customClass.getName();
+        customClassDisplay.textContent = name;
+    }
+    
 }
 
 window.onload = loader;
 
-const simpleObject = {
-    sayName: () => {
-        console.log('Simple Object');        
-    }
-}
-
-function functionObject() {
-    
-}
-functionObject.sayName = () => {
-    console.log('Function Object');
-}
-
-
-function ConObj() {
-    ConObj.prototype.sayName = () => {
-        console.log('Con Obj');
-    }
-}
-
-simpleObject.sayName();
-functionObject.sayName();
-const conObject = new ConObj();
-conObject.sayName();
-
-for (let prop in conObject) {
-    console.log(prop);
-}
-
-console.log(conObject.constructor.toString());
-console.log(conObject.foo);
-
-// Key Value pairs
-// Comma separated list of key value pairs.
+/*
+ * Object Literal
+ */
 const myObject = {
-    firstName: 'fred',
-    lastName: 'smith',
+    firstName: 'James',
+    lastName: 'Watson',
     getName: function() {
         return this.firstName + ' ' + this.lastName;
     }
 };
-
-function FunctionObject()  {
-    const firstName = 'sue';
-    const lastName = 'jones';
-
-    FunctionObject.prototype.getFullName = () => {
-        return firstName + ' ' + lastName;
-    }
-
-    FunctionObject.prototype.showFullName = () => {
-        console.log(firstName + ' ' + lastName);
-    }
-}
 
 myObject.middleName = 'barfoo';
 
@@ -83,8 +49,31 @@ myObject.getFullName = function() {
         ' ' + this.lastName;
 }
 
-console.log(myObject.firstName);
-console.log(myObject['firstName']);
-console.log(myObject.getName());
-console.log(myObject.middleName);   
-console.log(myObject.getFullName());
+/*
+ * Function Object
+ */
+function FunctionObject()  {
+    const firstName = 'Rosalind';
+    const lastName = 'Franklin';
+
+    FunctionObject.prototype.getFullName = () => {
+        return firstName + ' ' + lastName;
+    }
+
+}
+
+
+/*
+ * Custom Class
+ */
+
+ class CustomClass {
+     constructor() {
+         this.firstName = 'Francis';
+         this.lastName = 'Crick'
+     }
+
+     getName() {
+        return this.firstName + ' ' + this.lastName;
+     }
+ }
