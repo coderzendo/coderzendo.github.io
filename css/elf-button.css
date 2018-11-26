@@ -12,13 +12,16 @@ button {
 }
 
 .btn-padding {
-    padding: 8px;
-    border: 10px greenyellow solid;    
-    border-radius: 12px;
+    padding: 5px;
+    background-color: lightgray;
+    border: 2px lightslategrey solid;    
+    border-radius: 8px;
 }
 
+
+
 .btn-padding:hover {
-    background-color: goldenrod;
+    background-color: lightseagreen;
     border-color: white;
 }
 
