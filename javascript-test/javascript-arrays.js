@@ -61,9 +61,10 @@ window.onload = () => {
         }
     };
 
-    document.forms['sort-type'].addEventListener('submit', (event) => {
+    const myForm = document.getElementById('sort-type');
+
+    myForm.addEventListener('submit', (event) => {
         event.preventDefault();
-        // TODO do something here to show user that form is being submitted
         const value = document.querySelector('input[name="sorter"]:checked').value;
         if (value.toLowerCase() === 'language') {
             compareTool = compareLanguage;
