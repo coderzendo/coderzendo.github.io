@@ -50,6 +50,10 @@ footer {
     text-align: center;
 }
 
+footer ul {
+    list-style-type: none;
+}
+
 input#list-data {
     border: 10px yellowgreen solid;
     border-radius: 15px;
