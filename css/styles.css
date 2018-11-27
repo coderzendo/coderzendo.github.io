@@ -125,3 +125,11 @@ ul#my-list {
     font-style: italic;
     font-size: 80%;
 }
+
+.blueBackground {
+    background-color: aqua;
+}
+
+.greenBackground {
+    background-color: green;
+}
