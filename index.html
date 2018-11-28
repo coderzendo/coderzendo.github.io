@@ -4,8 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Coder Zendo Home Page</title>
-        <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
-        <link rel="stylesheet" href="styles01.css">
+        <link rel="icon" type="image/png" href="favicon.png"/>
+        <!-- link rel="stylesheet" href="styles01.css" -->
+        <link href="css/basic.css" rel="alternate stylesheet" type="text/css" id="basic">
+        <link href="css/styles.css" rel="stylesheet" type="text/css" id="default">
+        <script src="lib/css-swap.js"></script>
     </head>
 
     <body>
@@ -32,6 +35,7 @@
             <p>This is <strong>my</strong> paragraph. I'm using a <b>p</b> tag. </p>
 
             <p>Hemingway wrote <cite>The Sun Also Rises</cite>.</p>
+
         </section>
 
         <section>
@@ -40,6 +44,8 @@
             <p>This is still <strong>my</strong> Week Three paragraph. I'm using a <b>p</b> tag. </p>
 
             <p>Faulkner wrote <cite>Tender is the Night</cite> and <cite>The Great Gatsby</cite>.</p>
+
+            <button id="appearanceAction" type="button">Change Appearance</button>  
         </section>
     </body>
 </html>
