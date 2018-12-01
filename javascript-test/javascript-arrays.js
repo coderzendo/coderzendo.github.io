@@ -28,11 +28,18 @@ window.onload = () => {
 
     numbersAction.onclick = () => {
         const numbersDisplay = document.getElementById('numbers-display');
-        for (let number of arrays.numbers) {
-            const li = document.createElement("li");
-            li.appendChild(document.createTextNode(number));
-            numbersDisplay.appendChild(li);
+
+        const showNumbers = () => {
+            for (let number of arrays.numbers) {
+                const li = document.createElement("li");
+                li.appendChild(document.createTextNode(number));
+                numbersDisplay.appendChild(li);
+            }
         }
+
+        showNumbers();
+        arrays.numbers.sort((a, b) => a - b);
+        showNumbers();        
     };
 
     languageNamesAction.onclick = () => {
