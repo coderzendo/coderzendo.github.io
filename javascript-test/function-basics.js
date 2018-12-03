@@ -24,7 +24,7 @@ window.onload = () => {
 }
 
 function simpleFunction() {
-    const displayText = "functions should consist of statements designed to perform a single task.";
+    const displayText = "Functions should consist of statements designed to perform a single task.";
     const simpleFunctionParagraph = document.getElementById("simple-function");
     console.log(displayText);
     simpleFunctionParagraph.textContent = displayText;
