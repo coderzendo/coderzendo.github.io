@@ -4,11 +4,15 @@ window.onload = () => {
     myForm.addEventListener('submit', (event) => {
         event.preventDefault();
         const value = document.querySelector('input[name="sorter"]:checked').value;
-        if (value.toLowerCase() === 'blue') {            
+        const color = value.toLowerCase();
+        if ( color === 'blue') {            
             setColor("blueBackground");
             showChoice(value);
-        } else {
+        } else if (color === 'green') {
             setColor("greenBackground");
+            showChoice(value);
+        } else if (color === 'red') {
+            setColor('redBackground');
             showChoice(value);
         }
     });
