@@ -4,11 +4,15 @@ window.onload = () => {
     const callUserInput = document.getElementById('call-user-input');
 
     functionCalls.onclick = () => {
+        // Both these functions get their display control
         simpleFunction();  
         functionParameters("Many functions take parameters.");
-        functionReturn();
+
+        // This function returns a value and we handle the display here.
+        const functionReturnDisplay = document.getElementById('function-return-display');
         const returnValue = functionReturn();
         console.log(returnValue);
+        functionReturnDisplay.textContent = returnValue;
     }    
 
     callUserInput.onclick = () => {
