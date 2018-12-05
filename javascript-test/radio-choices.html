@@ -8,6 +8,7 @@
     <title>Radio Choices</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/elf-buttons.css">
+    <link rel="stylesheet" href="../css/side-menu.css">
     <script src="radio-choices.js"></script>
 </head>
 
@@ -18,8 +19,21 @@
         <p><i>by Charlie Calvert</i></p>
     </header>
 
-    <main>
+    <nav id="mySidenav" class="sidenav">
+        <ul>
+            <li>Foo</li>
+            <li>bar</li>
+            <li>qux</li>
+        </ul>
+    </nav>
 
+    <main>
+        <!-- <span onclick="openNav()">open</span></p -->
+        <div id="navButtons">
+            <button id="openNav" type="button">Open</button>
+            <button id="closeNav" type="button">Close</button>
+        </div>
+        
         <section>
             <fieldset>
                 <legend>The User Selection</legend>

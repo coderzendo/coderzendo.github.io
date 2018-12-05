@@ -1,8 +1,9 @@
 function loader() {
     const getNamesButton = document.getElementById('getNames');
     const functionButton = document.getElementById('getFunctionObject');
+   
 
-    getNamesButton.onclick = function() {
+    getNamesButton.onclick = function () {
         const name = myObject.getName();
         const getNameDisplay = document.getElementById('getNameDisplay');
         getNameDisplay.textContent = name;
@@ -16,6 +17,8 @@ function loader() {
     console.log(functionObject.getFullName());
     //console.log(functionObject.getName());
     functionButton.onclick = functionObject.showFullName;
+
+ 
 }
 
 window.onload = loader;
@@ -25,12 +28,12 @@ window.onload = loader;
 const myObject = {
     firstName: 'fred',
     lastName: 'smith',
-    getName: function() {
+    getName: function () {
         return this.firstName + ' ' + this.lastName;
     }
 };
 
-function FunctionObject()  {
+function FunctionObject() {
     const firstName = 'sue';
     const lastName = 'jones';
 
@@ -45,14 +48,14 @@ function FunctionObject()  {
 
 myObject.middleName = 'barfoo';
 
-myObject.getFullName = function() {
+myObject.getFullName = function () {
     return this.firstName +
-        ' ' + this.middleName + 
+        ' ' + this.middleName +
         ' ' + this.lastName;
 }
 
 console.log(myObject.firstName);
 console.log(myObject['firstName']);
 console.log(myObject.getName());
-console.log(myObject.middleName);   
+console.log(myObject.middleName);
 console.log(myObject.getFullName());
