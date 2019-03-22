@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US" xml:lang="en-US" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Favorite Songs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+
+<body>
+<h1>My Music Site</h1>
+<h3>Enter information for your favorite songs, click Submit after each one.</h3>
+<section id="form-section">
+    <fieldset>
+        <legend>Enter Music</legend>
+        <!-- OUR FORM GOES HERE. -->
+        <form>
+            <div class="form-group">
+                <label for="title">Song Title</label>
+                <input type="text" id="title"/>
+            </div>
+
+            <div class="form-group">
+                <lable for='artist'>Artist</lable>
+                <input type="text" id="artist"/>
+            </div>
+
+            <div class="form-group">
+                <label for="year">Year</label>
+                <input type="text" id="year"/>
+            </div>
+
+            <input type="button" value="Submit" onclick="FormSubmit()"/>
+        </form>
+    </fieldset>
+</section>
+
+<div class="kurt-center">
+    When done adding movies, click Done.
+    <input type="button" value="Done" onclick="Done()"/>
+</div>
+
+<div class="kurt-center">
+    <p id="ourTable">
+</div>
+
+<div class="kurt-center">
+    <a href="https://www.billboard.com/news">Jump to Billboard Magazine website</a>
+</div>
+
+
+<script src="HomeJavaScript.js"></script>
+</body>
+</html>
