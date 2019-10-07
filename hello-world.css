@@ -4,4 +4,22 @@ body {
 
 h1 {
     color: blue;
+    font-size: 25px;
+}
+
+h2 {
+    color: green;
+    font-size: 20px;
+}
+
+.red-heading {
+    color: red;
+}
+
+.blue-text {
+    color: blue;
+}
+
+#new-font {
+    font-family: fantasy, cursive, serif;
 }
