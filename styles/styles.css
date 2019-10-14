@@ -37,6 +37,10 @@ figure.left {
     float: left;
 }
 
+p.clear {
+    clear: both;
+}
+
 .red-heading {
     color: red;
 }
