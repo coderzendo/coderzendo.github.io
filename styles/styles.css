@@ -12,11 +12,30 @@ h2 {
     font-size: 20px;
 }
 
+header {
+    background-color: chartreuse;
+}
+
+main {
+    background-color: darkgoldenrod;
+}
+
 header p {
     font-weight: bold;
     font-style: italic; 
     color: blue;
 } 
+
+footer {
+    background-color: aliceblue;
+    border: black solid thin;
+    padding-left: 5px;
+    border-radius: 8px;
+}
+
+figure.left {
+    float: left;
+}
 
 .red-heading {
     color: red;
