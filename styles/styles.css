@@ -12,6 +12,12 @@ h2 {
     font-size: 20px;
 }
 
+header p {
+    font-weight: bold;
+    font-style: italic; 
+    color: blue;
+} 
+
 .red-heading {
     color: red;
 }
