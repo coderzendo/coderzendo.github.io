@@ -1,5 +1,7 @@
 body {
     background-color: aquamarine;
+    max-width: 500px;
+    margin: auto;
 }
 
 h1 {
@@ -71,3 +73,51 @@ section.clear {
 #new-font {
     font-family: fantasy, cursive, serif;
 }
+
+.btn-padding {
+    padding: 25px;
+    border: 5px green double;
+    border-radius: 22px;
+}
+
+/*
+.btn-padding {
+    border-width: 10px;
+    border-color: green;
+    border-style: double;
+}*/
+
+.btn-padding:hover {
+    background-color: aqua;
+    border-color: white;
+} 
+
+.btn-margin-padding {    
+    margin: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 15px green;
+    border-style: ridge;
+}
+
+.btn-margin-padding:active {
+    background-color: red;
+}                    
+
+#button-wrapper {
+    background-color: aquamarine;
+    display: inline-block;
+    border: thin black solid;
+}
+
+
+aside {        
+    background-color: bisque;
+    border: black 1px solid;
+    border-radius: 8px;
+    float: right;
+    font-style: italic;
+    margin-right: 5px;
+    padding: 8px;
+    width: 33%;        
+}   
