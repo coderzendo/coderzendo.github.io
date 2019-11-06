@@ -1,8 +1,9 @@
 window.onload = () => {
 
     const functionCalls = document.getElementById('functionCallsAction');
-    const callUserInput = document.getElementById('call-user-input');
+    const addToListAction = document.getElementById('addToListAction');
 
+    console.log('foo');
     functionCalls.onclick = () => {
         // Both these functions get their display control
         simpleFunction();
@@ -15,13 +16,15 @@ window.onload = () => {
         functionReturnDisplay.textContent = returnValue;
     };
 
-    callUserInput.onclick = () => {
-        const userInputParagraph = document.getElementById('show-user-input');
-        const userInput = document.getElementById('user-input');
-        userInputParagraph.textContent = userInput.value;
+    addToListAction.onclick = () => {
+        const listDisplay = document.getElementById('listDisplay');
+        const nameDisplay = document.getElementById('nameDisplay');
+
+        const data = nameDisplay.value;
+        elfCode.appendToList(listDisplay, data);
     }
 
-}
+};
 
 function simpleFunction() {
     const displayText = "Functions should consist of statements designed to perform a single task.";

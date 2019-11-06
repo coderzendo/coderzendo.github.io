@@ -5,21 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Function Basics</title>
-
+    <script src="./function-basics.js"></script>
+    <script src="../lib/elf-code.js"></script>
 </head>
 
 <body>
     <h1>Function Basics</h1>
+
+    <p>Add text to paragraph elements and add text to a list.</p>
+
+    <h2>Add Text to Paragraphs</h2>
 
     <p id="simple-function"></p>
     <p id="function-parameters"></p>
     <p id="function-return-display"></p>
     <p id="show-user-input"></p>
 
-    <input type="text" name="user-input" id="user-input">
+    <div>
+        <button id="functionCallsAction" type="button">Call Functions</button>
+    </div>
 
-    <button id="functionCallsAction" type="button">Call Functions</button>
-    <button id="call-user-input" type="button">Call User Input</button>
-    <script src="function-basics.js"></script>
+    <h2>Add Text to List</h2>
+
+    <label for="nameDisplay">Enter a name</label>
+    <input type="text" id="nameDisplay" name="nameDisplay" value="default" >
+    <ul id="listDisplay"></ul>
+    <div>
+        <button id="addToListAction" type="button">Add to list.</button>
+    </div>
+
 </body>
 </html>
