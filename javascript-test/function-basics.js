@@ -1,11 +1,11 @@
 window.onload = () => {
-    
-    const functionCalls = document.getElementById('function-calls');
+
+    const functionCalls = document.getElementById('functionCallsAction');
     const callUserInput = document.getElementById('call-user-input');
 
     functionCalls.onclick = () => {
         // Both these functions get their display control
-        simpleFunction();  
+        simpleFunction();
         functionParameters("Many functions take parameters.");
 
         // This function returns a value and we handle the display here.
@@ -13,14 +13,14 @@ window.onload = () => {
         const returnValue = functionReturn();
         console.log(returnValue);
         functionReturnDisplay.textContent = returnValue;
-    }    
+    };
 
     callUserInput.onclick = () => {
         const userInputParagraph = document.getElementById('show-user-input');
         const userInput = document.getElementById('user-input');
         userInputParagraph.textContent = userInput.value;
     }
-      
+
 }
 
 function simpleFunction() {
