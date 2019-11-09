@@ -54,6 +54,16 @@ nav li {
     padding: 8px;    
 }
 
+nav ul.no-collapse {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+nav ul.no-collapse li {
+    display: list-item;
+    padding: 3px;
+}
+
 figure.left {
     float: left;
 }
