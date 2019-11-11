@@ -41,6 +41,7 @@ window.onload = () => {
     const simpleBranchDisplay = document.getElementById('simpleBranchDisplay');
     
     simpleBranchAction.onclick = (event) => {
+        console.log('SIMPLE BRANCH ACTION ON CLICK WAS CALLED');
         let height = 4;
         if (height >= 5) {
             simpleBranchDisplay.textContent = 'We have a big one';
