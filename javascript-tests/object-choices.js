@@ -2,17 +2,20 @@ window.onload = () => {
 
     const simpleObjectDisplay = document.getElementById('simpleObjectDisplay');
     const simpleObjectAction = document.getElementById('simpleObjectAction');
-    //simpleObjectDisplay.textContent = 'foobar';
 
     const simpleObject = {
         firstName: 'James',
         lastName: 'Watson',
         sayName: function () {
-            console.log(this.firstName + " " + this.lastName);
+            const fullName = this.firstName + " " + this.lastName;
+            console.log(fullName);
+            simpleObjectDisplay.textContent = fullName;
         }
     };
 
-    simpleObjectAction.onclick = simpleObject.sayName;
+    simpleObjectAction.onclick = function() {
+        simpleObject.sayName();
+    }
 
     simpleObject.dynamicMethod = () => {
         console.log("Dynamic Method");
@@ -30,7 +33,7 @@ window.onload = () => {
         }
     }
 
-    simpleObject.sayName();
+    //simpleObject.sayName();
     simpleObject.dynamicMethod();
 
     const functionObject = new FunctionObject();
