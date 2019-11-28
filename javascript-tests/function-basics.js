@@ -1,3 +1,5 @@
+
+/*
 window.onload = () => {
     // All code goes in here.
     const simpleFunctionDisplay = document.getElementById('simpleFunctionDisplay');
@@ -38,3 +40,4 @@ window.onload = () => {
     console.log(returnValue);
 
 }
+*/
