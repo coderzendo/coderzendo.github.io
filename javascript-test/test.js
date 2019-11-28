@@ -1,8 +1,11 @@
-var prog109 = 'Prog109 on Monday';
+window.onload = () => {
 
-var a = 10;
-var b = 15;
+    feetToInchesAction.onclick = () => {
+        console.log('test');
+        /* const feetToInchesInput = document.getElementById('feetToInchesInput');
+        let feetToInchesDisplay = document.getElementById('feetToInchesDisplay');
 
-console.log(prog109);
-console.log('a + b =', a + b);
-console.log(a * b);
+        feetToInchesDisplay.textContent = feetToInches(feetToInchesInput.value); */
+    };
+
+}

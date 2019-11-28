@@ -1,13 +1,13 @@
 function loader() {
-    const objectLiteralButton = document.getElementById('objectLiteralAction');
+    const simpleObjectButton = document.getElementById('simpleObjectAction');
     const functionButton = document.getElementById('functionObjectAction');
     const customClassButton = document.getElementById('customClassAction')
 
-    objectLiteralButton.onclick = function() {       
+    simpleObjectButton.onclick = function() {       
 
         // Get the display controls
-        const getNameDisplay = document.getElementById('olNameDisplay');
-        const getFullNameDisplay = document.getElementById('olFullNameDisplay');
+        const getNameDisplay = document.getElementById('simpleObjectDisplay');
+        const getFullNameDisplay = document.getElementById('objectLiteralFullNameDisplay');
         
         // Call get name
         const name = myObject.getName();
