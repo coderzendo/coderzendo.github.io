@@ -1,3 +1,11 @@
+const elfCode = {
+    appendToList: (list, value) => {
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(value));
+        list.appendChild(li);
+    }
+};
+
 window.onload = () => {
 
     const functionCalls = document.getElementById('functionCallsAction');
@@ -21,8 +29,8 @@ window.onload = () => {
         const displayText = "Functions should consist of statements designed to perform a single task.";
         console.log(displayText);
 
-        const simpleFunctionParagraph = document.getElementById("simple-function");    
-        simpleFunctionParagraph.textContent = displayText;
+        const simpleFunctionDisplay = document.getElementById("simpleFunctionDisplay");    
+        simpleFunctionDisplay.textContent = displayText;
     }
 
 };
