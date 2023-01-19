@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
+last_modified_at: 
 ---
   
 {% include sign-in.html %}
@@ -10,6 +11,12 @@ layout: default
 # Title: {{ site.title }}
 
 **Description**: {{ site.description }}
+
+## Bing Trees
+
+![image tooltip here](/assets/certificate01.png)
+
+![image tooltip here](/assets/certificate02.png)
 
 ## Stuff
 
