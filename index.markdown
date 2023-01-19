@@ -4,8 +4,10 @@
 
 layout: default
 ---
+  
+{% include sign-in.html %}
 
-Title: {{ site.title }}
+# Title: {{ site.title }}
 
 **Description**: {{ site.description }}
 
