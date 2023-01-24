@@ -1,7 +1,20 @@
 
+## Jekyll
 
 - bundle install	
 - bundle exec jekyll serve
+- For config see: Gemfile, _config.yml
+
+## Firebase
+
+ - firebase serve
+ - For config see: .firebaserc, firebase.json 
+ - We are using **bundle.js** from webpack
+
+## Switch Firebase Projects
+
+- firebase use <PROJECT_ID>
+- firebase use starters-charlie
 
 [hosting](https://www.educative.io/answers/how-to-deploy-your-web-application-on-firebase-hosting)
 
