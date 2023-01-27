@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "Webpack"
+date:   2023-01-27 09:58:25 -0800
+categories: javascript
+---
+
+# Webpack
+
+At the bash prompt:
+
+``` shell
+npm i webpack webpack-cli -D
+```
+
+At your project root, add this to file **webpack.config.js**:
+
+``` javascript
+const path = require('path');
+
+module.exports = {
+  // The entry point file described above
+  entry: './src/index.js',
+  // The location of the build folder described above
+  output: {
+    path: path.resolve(__dirname, 'public'),
+    filename: 'bundle.js'
+  },
+  // Optional and for development only. This provides the ability to
+  // map the built code back to the original source format when debugging.
+  devtool: 'eval-source-map',
+};
+```
+
+In the **scripts** section of your **package.json** file:
+
+``` json
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=development"
+},
+```
