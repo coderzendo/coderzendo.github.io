@@ -1,3 +1,5 @@
+From my [stack overflow answer](https://stackoverflow.com/a/75252957/253576):
+
 In P5, the **setup** function is called automatically one time when your program starts. This is a function that you should create so that your program is initialized correctly. Here are some important facts found in the docs:
 
 > [**setup** is] *used to define initial environment properties such as screen size and background color and to load media such as images and fonts as the program starts. There can only be one **setup()** function for each program and it shouldn't be called again after its initial execution*.
