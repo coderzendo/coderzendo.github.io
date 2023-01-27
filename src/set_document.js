@@ -13,4 +13,14 @@ async function runSantaCruz(firebaseApp) {
 
 }
 
-export { runSantaCruz };
+async function runSacromento(firebaseApp) {
+    const db = getFirestore(firebaseApp);
+    await setDoc(doc(db, "cities", "SAC"), {
+        name: "Sacromento",
+        state: "CA",
+        country: "USA"
+    });
+
+}
+
+export { runSantaCruz, runSacromento };
