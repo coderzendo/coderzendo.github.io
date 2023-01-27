@@ -40,3 +40,16 @@ In the **scripts** section of your **package.json** file:
     "build": "webpack --mode=development"
 },
 ```
+
+Then you can:
+
+```
+npm run build
+```
+
+To load the file:
+
+``` html
+<script src="bundle.js"></script>
+```
+
