@@ -3,6 +3,7 @@ import { initializeApp } from 'firebase/app';
 import { getFirestore, doc, getDoc } from 'firebase/firestore/lite';
 import { firebaseConfig } from './configure';
 import { runSacromento } from './set_document';
+import './sign-in-elf';
 
 const firebaseApp = initializeApp(firebaseConfig);
 const db = getFirestore(firebaseApp);
