@@ -1,8 +1,10 @@
 import { getFirestore, doc, setDoc } from "firebase/firestore";
+/**
+ * basic database operations used with firebase-index.js
+ * and sign-in-elf-js included in these gists
+ */
 
 // Add a new document in collection "cities"
-
-
 async function runSantaCruz(firebaseApp) {
     const db = getFirestore(firebaseApp);
     await setDoc(doc(db, "cities", "SC"), {
@@ -13,7 +15,7 @@ async function runSantaCruz(firebaseApp) {
 
 }
 
-async function runSacromento(firebaseApp) {
+async function runSacramento(firebaseApp) {
     const db = getFirestore(firebaseApp);
     await setDoc(doc(db, "cities", "SAC"), {
         name: "Sacromento",
@@ -23,4 +25,4 @@ async function runSacromento(firebaseApp) {
 
 }
 
-export { runSantaCruz, runSacromento };
+export { runSantaCruz, runSacramento };
