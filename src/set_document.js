@@ -25,6 +25,16 @@ async function runSacramento(firebaseApp) {
 
 }
 
+async function phaserData(firebaseApp) {
+    const db = getFirestore(firebaseApp);
+    await setDoc(doc(db, "cities", "PHA"), {
+        name: "Phaser",
+        state: "WA",
+        country: "USA"
+    });
+
+}
+
 async function loadCity(name) {
     const cityDoc = doc(db, `cities/${name}`);
     const snapshot = await getDoc(cityDoc);
@@ -34,4 +44,6 @@ async function loadCity(name) {
     };
 }
 
-export { runSantaCruz, runSacramento };
+
+
+export { runSantaCruz, runSacramento, phaserData };

@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-last_modified_at: 2023-02-07T01:28:16
+last_modified_at: 2023-02-07T20:51:43
 ---
   
 <!-- {  % include sign-in.html %}  -->
@@ -11,7 +11,10 @@ last_modified_at: 2023-02-07T01:28:16
 
 # Title: {{ site.title }}
 
+{% include head-firebase.html %}
+
 **Description**: {{ site.description }}
+
 
 ## Bing Tree Certificates
 

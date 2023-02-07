@@ -1,12 +1,14 @@
 // src/index.js
 import { initializeApp } from 'firebase/app';
-import { getFirestore, doc, getDoc } from 'firebase/firestore/lite';
+import { getFirestore } from 'firebase/firestore/lite';
 import { firebaseConfig } from './configure';
 import { runSacramento } from './set_document';
 import { signInElf } from './sign-in-elf';
+import { phaserData } from './set_document';
 
 const firebaseApp = initializeApp(firebaseConfig);
 const db = getFirestore(firebaseApp);
 signInElf(firebaseApp);
+phaserData(firebaseApp);
 console.log('src/index.js fom bundle called');
 runSacramento(firebaseApp);
