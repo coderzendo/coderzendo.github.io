@@ -3,10 +3,11 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-last_modified_at: 2023-01-19T16:35:17
+last_modified_at: 2023-02-07T01:28:16
 ---
   
-{% include sign-in.html %}
+<!-- {  % include sign-in.html %}  -->
+<!-- {  % include head-firebase.html %} -->
 
 # Title: {{ site.title }}
 

@@ -1,4 +1,4 @@
-import { getFirestore, doc, setDoc } from "firebase/firestore";
+import { getFirestore, doc, getDoc, setDoc } from "firebase/firestore";
 /**
  * basic database operations used with firebase-index.js
  * and sign-in-elf-js included in these gists
@@ -23,6 +23,15 @@ async function runSacramento(firebaseApp) {
         country: "USA"
     });
 
+}
+
+async function loadCity(name) {
+    const cityDoc = doc(db, `cities/${name}`);
+    const snapshot = await getDoc(cityDoc);
+    return {
+        id: snapshot.id,
+        ...snapshot.data(),
+    };
 }
 
 export { runSantaCruz, runSacramento };
