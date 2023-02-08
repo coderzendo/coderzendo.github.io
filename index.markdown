@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-last_modified_at: 2023-02-08T19:47:41
+last_modified_at: 2023-02-08T20:00:15
 ---
   
 <!-- {  % include sign-in.html %}  -->
@@ -14,6 +14,8 @@ last_modified_at: 2023-02-08T19:47:41
 {% include head-firebase.html %}
 
 **Description**: {{ site.description }}
+
+**Site Author**: {{ site.author }}
 
 <div class="home">
   {%- if page.title -%}
