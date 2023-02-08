@@ -61,3 +61,5 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 #   - webpack.config.js
+#   - clean.sh
+#   - serve.sh
