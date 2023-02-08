@@ -3,6 +3,7 @@ layout: post
 title:  "Webpack"
 date:   2023-01-27 09:58:25 -0800
 categories: javascript
+author: Charlie Calvert
 ---
 
 # Webpack
