@@ -3,10 +3,10 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-last_modified_at: 2023-02-11T19:44:15
+last_modified_at: 2023-02-11T20:15:25
 ---
 
-{% include sign-up-modal.html %}
+{% include sign-in-dialog.html %}
 
 <div class="home">
   {%- if page.title -%}
