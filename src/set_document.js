@@ -17,9 +17,9 @@ async function runSantaCruz(firebaseApp) {
 
 async function runSacramento(firebaseApp) {
     const db = getFirestore(firebaseApp);
-    await setDoc(doc(db, "cities", "SAC"), {
-        name: "Sacromento",
-        state: "CA",
+    await setDoc(doc(db, "cities", "BEL"), {
+        name: "Bellevue",
+        state: "WA",
         country: "USA"
     });
 
