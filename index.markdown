@@ -3,8 +3,10 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-last_modified_at: 2023-02-11T20:15:25
+last_modified_at: 2023-02-11T20:33:15
 ---
+
+<script src="{{ base.url | prepend: site.url }}/assets/js/test.js"></script>
 
 {% include sign-in-dialog.html %}
 
