@@ -3,9 +3,9 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-last_modified_at: 2023-02-11T20:33:15
+last_modified_at: 2023-02-14T19:53:46
 ---
-
+<script src="./public/bundle.js"></script>
 <script src="{{ base.url | prepend: site.url }}/assets/js/test.js"></script>
 
 {% include sign-in-dialog.html %}
