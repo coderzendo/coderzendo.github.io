@@ -22,6 +22,14 @@ function formatDate(date, formatStr) {
     return formatStr.replace(/mm|dd|y2|yyyy/gi, matched => map[matched])
 }
 
+/**
+ * create a file name with a date prepended to it
+ * and also return Jekyll front matter
+ * @param {string} fileNameBase - The core filename on which to 
+ * base the dated name
+ * @param {*} ensure - Create the file and be sure that it exists
+ * @returns { object } return the filename and front matter 
+ */
 async function createPostDateFileName(fileNameBase, ensure) {
     // const fileNameBase = 'message01';
     console.log('fileNameBase', fileNameBase);

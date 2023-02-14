@@ -19,7 +19,7 @@ postdate=`date "+%Y-%m-%d"`
 jekylldate=`date "+%Y-%m-%d"`
 read -p "Enter the post name: " post_variable;
 
-cat <<EOF > /Users/TJ/Desktop/foobar.com/_posts/$yearmonth/$postdate-$post_variable.markdown
+cat <<EOF > /home/ubuntu/Git/coderzendo.github.com/_posts/$yearmonth/$postdate-$post_variable.markdown
 ---
 layout: post
 date: 2023-01-12 02:55:38 -0800

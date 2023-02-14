@@ -15,11 +15,15 @@ async function readFirstLine(path) {
     }
 }
 
-// const firstLine = await readFirstLine(path);
-async function getFirst(fileName) {
+/**
+ * 
+ * @param {string} fileName 
+ * @returns 
+ */
+async function getFirstLineFromFile(fileName) {
     // console.log('get first is called');
     const fl = await readFirstLine(fileName);
     return (fl);
 }
 
-export { readFirstLine, getFirst };
+export { readFirstLine, getFirstLineFromFile };
