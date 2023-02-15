@@ -1,6 +1,6 @@
 import { readFileSync, openSync, writeSync, close, writeFileSync } from 'node:fs';
 import { getFirstLineFromFile } from './getFirstLine.js';
-import { createPostDateFileName } from './constants.js';
+import { createPostDateFileName } from './create-post-date.js';
 
 async function createBasePost(baseFileName) {
     const { fileName, frontMatter } = await createPostDateFileName(baseFileName, true);
@@ -18,7 +18,7 @@ function insertFrontMatter(fileName, frontMatter) {
     const data = readFileSync(fileName);
     const fd = openSync(fileName, 'w+');
     const insert = Buffer.from(frontMatter);
-    console.log('buffer insert front matter\n', insert.length, insert);
+    // console.log('buffer insert front matter\n', insert.length, insert);
 
     writeSync(fd, insert);
     // writeSync(fd, data, 0, data.length, insert.length);
