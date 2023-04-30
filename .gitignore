@@ -5,6 +5,7 @@ _site
 vendor
 capcha.html
 bundle.js
+test
 
 # Firebase cache
 .firebase

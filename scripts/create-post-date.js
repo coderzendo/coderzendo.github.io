@@ -12,13 +12,14 @@ async function ensureFileElf(fileName) {
 }
 
 function formatDate(date, formatStr) {
+    console.log('get day', date.getDate());
     const map = {
-        mm: ('' + date.getMonth() + 1).padStart(2, "0"),
-        dd: ('' + date.getDay()).padStart(2, "0"),
+        mm: ('' + (date.getMonth() + 1)).padStart(2, "0"),
+        dd: ('' + date.getDate()).padStart(2, "0"),
         y2: date.getFullYear().toString().slice(-2),
         yyyy: date.getFullYear()
     }
-
+    console.log('map', map);
     return formatStr.replace(/mm|dd|y2|yyyy/gi, matched => map[matched])
 }
 
@@ -36,6 +37,7 @@ async function createPostDateFileName(fileNameBase, ensure) {
 
     const today = new Date();
     const fileDate = formatDate(today, 'yyyy-mm-dd');
+    console.log('fileDate', fileDate);
     const fileName = format(`%s-${fileNameBase}.markdown`, fileDate);
 
     if (ensure) {
