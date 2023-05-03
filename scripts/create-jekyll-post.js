@@ -1,9 +1,12 @@
 
-import { createBasePost, insertFrontMatter } from "./utils.js";
+import { createJekyllPost } from "./utils.js";
+import { input } from '@inquirer/prompts';
+
 
 async function run() {
-    const { fileName, firstLine, frontMatter } = await createBasePost("test");
-    insertFrontMatter(fileName, frontMatter)
+    const answer = await input({ message: 'Enter base post name:' });
+
+    createJekyllPost(answer);
 }
 
 await run();

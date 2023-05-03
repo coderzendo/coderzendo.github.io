@@ -1,4 +1,4 @@
-import { readFileSync, openSync, writeSync, close, writeFileSync } from 'node:fs';
+import { readFileSync, openSync, writeSync, close, writeFileSync, unlink } from 'node:fs';
 import { getFirstLineFromFile } from './getFirstLine.js';
 import { createPostDateFileName } from './create-post-date.js';
 
@@ -27,4 +27,20 @@ function insertFrontMatter(fileName, frontMatter) {
             throw err;
     });
 }
-export { createBasePost, insertFrontMatter };
+
+function deleteFile(fileName) {
+    unlink(fileName, (err) => {
+        if (err) {
+            throw err;
+        }
+        console.log(`${fileName} was deleted`);
+    });
+}
+
+async function createJekyllPost(fileNamePart) {
+    const { fileName, firstLine, frontMatter } = await createBasePost(fileNamePart);
+    insertFrontMatter(fileName, frontMatter);
+    deleteFile(fileNamePart);
+}
+
+export { createBasePost, createJekyllPost, deleteFile, insertFrontMatter };
