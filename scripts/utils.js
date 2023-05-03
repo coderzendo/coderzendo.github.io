@@ -2,6 +2,11 @@ import { readFileSync, openSync, writeSync, close, writeFileSync, unlink } from 
 import { getFirstLineFromFile } from './getFirstLine.js';
 import { createPostDateFileName } from './create-post-date.js';
 
+/**
+ * 
+ * @param {string} baseFileName
+ * @returns {Promise<{fileName: string, firstLine: string, frontMatter: string}>}    
+ */
 async function createBasePost(baseFileName) {
     const { fileName, frontMatter } = await createPostDateFileName(baseFileName, true);
 
@@ -12,6 +17,11 @@ async function createBasePost(baseFileName) {
     return { fileName, firstLine, frontMatter }
 }
 
+/**
+ * 
+ * @param {string} fileName 
+ * @param {string} frontMatter 
+ */
 function insertFrontMatter(fileName, frontMatter) {
     console.log('front matter:\n', frontMatter);
 
